@@ -37,4 +37,4 @@ git checkout main
 14. After your branch is switched to Main, you have to pull any new changes to your computer local files of the project:
 git pull
 
-13. To continue working on your machine, go back to step 5.
+13. To continue working on your machine, go back to step 6.
