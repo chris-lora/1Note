@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA22911127A7032C000786FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22911027A7032C000786FB /* AppDelegate.swift */; };
 		DA22911327A7032C000786FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22911227A7032C000786FB /* SceneDelegate.swift */; };
-		DA22911527A7032C000786FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22911427A7032C000786FB /* ViewController.swift */; };
+		DA22911527A7032C000786FB /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22911427A7032C000786FB /* SignInVC.swift */; };
 		DA22911827A7032C000786FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA22911627A7032C000786FB /* Main.storyboard */; };
 		DA22911B27A7032C000786FB /* _Note.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA22911927A7032C000786FB /* _Note.xcdatamodeld */; };
 		DA22911D27A7032D000786FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA22911C27A7032D000786FB /* Assets.xcassets */; };
@@ -19,19 +19,29 @@
 		DA22912D27A705BD000786FB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DA22912C27A705BD000786FB /* FirebaseAuth */; };
 		DA22912F27A705BD000786FB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DA22912E27A705BD000786FB /* FirebaseFirestore */; };
 		DA22913127A705BD000786FB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DA22913027A705BD000786FB /* FirebaseStorage */; };
+		DA711C9C27B0AAA00037C444 /* logoTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = DA711C9B27B0AAA00037C444 /* logoTransparent.png */; };
+		DA711C9E27B0B2D90037C444 /* AdminHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA711C9D27B0B2D90037C444 /* AdminHomeVC.swift */; };
+		DA711CA027B0B2FD0037C444 /* AdminSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA711C9F27B0B2FD0037C444 /* AdminSettingsVC.swift */; };
+		DA711CA727B0D0200037C444 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA711CA627B0D0200037C444 /* CollectionTableViewCell.swift */; };
+		DA711CA927B0D2350037C444 /* TileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA711CA827B0D2350037C444 /* TileCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA22910D27A7032C000786FB /* 1Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1Note.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA22911027A7032C000786FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA22911227A7032C000786FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA22911427A7032C000786FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA22911427A7032C000786FB /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		DA22911727A7032C000786FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA22911A27A7032C000786FB /* _Note.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _Note.xcdatamodel; sourceTree = "<group>"; };
 		DA22911C27A7032D000786FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA22911F27A7032D000786FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA22912127A7032D000786FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA22912727A70412000786FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DA711C9B27B0AAA00037C444 /* logoTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoTransparent.png; sourceTree = "<group>"; };
+		DA711C9D27B0B2D90037C444 /* AdminHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeVC.swift; sourceTree = "<group>"; };
+		DA711C9F27B0B2FD0037C444 /* AdminSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSettingsVC.swift; sourceTree = "<group>"; };
+		DA711CA627B0D0200037C444 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		DA711CA827B0D2350037C444 /* TileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,17 +78,38 @@
 		DA22910F27A7032C000786FB /* 1Note */ = {
 			isa = PBXGroup;
 			children = (
-				DA22911027A7032C000786FB /* AppDelegate.swift */,
-				DA22911227A7032C000786FB /* SceneDelegate.swift */,
-				DA22911427A7032C000786FB /* ViewController.swift */,
+				DA711CA227B0B38E0037C444 /* Delegates */,
+				DA711CA127B0B3540037C444 /* ViewControllers */,
 				DA22912727A70412000786FB /* GoogleService-Info.plist */,
 				DA22911627A7032C000786FB /* Main.storyboard */,
 				DA22911C27A7032D000786FB /* Assets.xcassets */,
 				DA22911E27A7032D000786FB /* LaunchScreen.storyboard */,
+				DA711C9B27B0AAA00037C444 /* logoTransparent.png */,
 				DA22912127A7032D000786FB /* Info.plist */,
 				DA22911927A7032C000786FB /* _Note.xcdatamodeld */,
+				DA711CA627B0D0200037C444 /* CollectionTableViewCell.swift */,
+				DA711CA827B0D2350037C444 /* TileCollectionViewCell.swift */,
 			);
 			path = 1Note;
+			sourceTree = "<group>";
+		};
+		DA711CA127B0B3540037C444 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA22911427A7032C000786FB /* SignInVC.swift */,
+				DA711C9D27B0B2D90037C444 /* AdminHomeVC.swift */,
+				DA711C9F27B0B2FD0037C444 /* AdminSettingsVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DA711CA227B0B38E0037C444 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DA22911027A7032C000786FB /* AppDelegate.swift */,
+				DA22911227A7032C000786FB /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA711C9C27B0AAA00037C444 /* logoTransparent.png in Resources */,
 				DA22912027A7032D000786FB /* LaunchScreen.storyboard in Resources */,
 				DA22912827A70412000786FB /* GoogleService-Info.plist in Resources */,
 				DA22911D27A7032D000786FB /* Assets.xcassets in Resources */,
@@ -162,10 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA22911527A7032C000786FB /* ViewController.swift in Sources */,
+				DA22911527A7032C000786FB /* SignInVC.swift in Sources */,
 				DA22911127A7032C000786FB /* AppDelegate.swift in Sources */,
 				DA22911327A7032C000786FB /* SceneDelegate.swift in Sources */,
+				DA711CA727B0D0200037C444 /* CollectionTableViewCell.swift in Sources */,
+				DA711CA927B0D2350037C444 /* TileCollectionViewCell.swift in Sources */,
+				DA711C9E27B0B2D90037C444 /* AdminHomeVC.swift in Sources */,
 				DA22911B27A7032C000786FB /* _Note.xcdatamodeld in Sources */,
+				DA711CA027B0B2FD0037C444 /* AdminSettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
