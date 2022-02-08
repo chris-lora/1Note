@@ -9,6 +9,12 @@ import UIKit
 
 class AdminHomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var uploadText: UITextField!
+    
+    
+    @IBAction func uploadClicked(_ sender: Any) {
+    }
+    
     private let tableView: UITableView = {
        let table = UITableView()
         table.register(UITableViewCell.self,
@@ -73,4 +79,6 @@ extension UIViewController: CollectionTableViewCellDelegate{
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
         present(alert, animated: true)
     }
+    
+    
 }

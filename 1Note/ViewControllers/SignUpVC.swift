@@ -1,30 +1,29 @@
 //
-//  ViewController.swift
+//  SignUpVCViewController.swift
 //  1Note
 //
-//  Created by Christopher Lora on 1/30/22.
+//  Created by Christopher Lora on 2/7/22.
 //
 
 import UIKit
-import Firebase
 
-class SignInVC: UIViewController {
+class SignUpVC: UIViewController {
 
     @IBOutlet weak var logoLarge: UIImageView!
-    @IBOutlet weak var signInLabel: UILabel!
+    @IBOutlet weak var signUpLabel: UILabel!
+    @IBOutlet weak var usernameText: UITextField!
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var questionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
-    @IBAction func signInClicked(_ sender: Any) {
     }
     
     @IBAction func signUpClicked(_ sender: Any) {
     }
+    
+    @IBAction func signInClicked(_ sender: Any) {
+    }
 }
-

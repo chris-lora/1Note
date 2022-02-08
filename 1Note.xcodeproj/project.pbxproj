@@ -24,6 +24,7 @@
 		DA711CA027B0B2FD0037C444 /* AdminSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA711C9F27B0B2FD0037C444 /* AdminSettingsVC.swift */; };
 		DA711CA727B0D0200037C444 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA711CA627B0D0200037C444 /* CollectionTableViewCell.swift */; };
 		DA711CA927B0D2350037C444 /* TileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA711CA827B0D2350037C444 /* TileCollectionViewCell.swift */; };
+		DA84677C27B223BB006B1907 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84677B27B223BA006B1907 /* SignUpVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		DA711C9F27B0B2FD0037C444 /* AdminSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSettingsVC.swift; sourceTree = "<group>"; };
 		DA711CA627B0D0200037C444 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		DA711CA827B0D2350037C444 /* TileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileCollectionViewCell.swift; sourceTree = "<group>"; };
+		DA84677B27B223BA006B1907 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				DA22911427A7032C000786FB /* SignInVC.swift */,
+				DA84677B27B223BA006B1907 /* SignUpVC.swift */,
 				DA711C9D27B0B2D90037C444 /* AdminHomeVC.swift */,
 				DA711C9F27B0B2FD0037C444 /* AdminSettingsVC.swift */,
 			);
@@ -199,6 +202,7 @@
 				DA22911327A7032C000786FB /* SceneDelegate.swift in Sources */,
 				DA711CA727B0D0200037C444 /* CollectionTableViewCell.swift in Sources */,
 				DA711CA927B0D2350037C444 /* TileCollectionViewCell.swift in Sources */,
+				DA84677C27B223BB006B1907 /* SignUpVC.swift in Sources */,
 				DA711C9E27B0B2D90037C444 /* AdminHomeVC.swift in Sources */,
 				DA22911B27A7032C000786FB /* _Note.xcdatamodeld in Sources */,
 				DA711CA027B0B2FD0037C444 /* AdminSettingsVC.swift in Sources */,
