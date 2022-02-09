@@ -6,18 +6,13 @@
 //
 
 import UIKit
+import Firebase
 
 class AdminHomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    @IBOutlet weak var uploadText: UITextField!
-    
-    
-    @IBAction func uploadClicked(_ sender: Any) {
-    }
     
     private let tableView: UITableView = {
        let table = UITableView()
-        table.register(UITableViewCell.self,
+        table.register(CollectionTableViewCell.self,
                        forCellReuseIdentifier: CollectionTableViewCell.identifier)
         return table
     }()
@@ -25,12 +20,12 @@ class AdminHomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
     private let viewModels: [CollectionTableViewCellViewModel] = [
         CollectionTableViewCellViewModel(
             viewModels: [
-                TileCollectionViewCellViewModel(name: "Apple", backgroundColor: .systemBlue),
-                TileCollectionViewCellViewModel(name: "Google", backgroundColor: .systemRed),
-                TileCollectionViewCellViewModel(name: "Nvidia", backgroundColor: .systemYellow),
-                TileCollectionViewCellViewModel(name: "Intel", backgroundColor: .systemPink),
-                TileCollectionViewCellViewModel(name: "Facebook", backgroundColor: .systemGreen),
-                TileCollectionViewCellViewModel(name: "Microsoft", backgroundColor: .systemOrange)
+                TileCollectionViewCellViewModel(name: "Dressing Tasks", backgroundColor: .systemBlue),
+                TileCollectionViewCellViewModel(name: "Vitals", backgroundColor: .systemRed),
+                TileCollectionViewCellViewModel(name: "Home Layout: Safety", backgroundColor: .systemYellow),
+                TileCollectionViewCellViewModel(name: "Home Layout: Accessibility", backgroundColor: .systemPink),
+                TileCollectionViewCellViewModel(name: "Fine Motor Milestone: Compact", backgroundColor: .systemGreen),
+                TileCollectionViewCellViewModel(name: "Fine Motor Milestone: Preschool", backgroundColor: .systemOrange)
             ]
         )
     ]
@@ -62,7 +57,7 @@ class AdminHomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
         cell.delegate = self
         cell.configure(with: viewModel)
         return cell
-    }
+        }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return view.frame.size.width/2
@@ -80,5 +75,13 @@ extension UIViewController: CollectionTableViewCellDelegate{
         present(alert, animated: true)
     }
     
+    @objc func makeAlert(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
     
 }

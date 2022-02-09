@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="_Note" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoTransparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ay8-XY-THp">
@@ -62,7 +62,7 @@
                                 <buttonConfiguration key="configuration" style="gray" title="Sign up"/>
                                 <connections>
                                     <action selector="signUpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ChW-i7-UPa"/>
-                                    <segue destination="DeK-FS-WDt" kind="show" id="8X4-Pc-gc3"/>
+                                    <segue destination="DeK-FS-WDt" kind="presentation" identifier="toSignUpVC" modalPresentationStyle="fullScreen" id="8X4-Pc-gc3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -76,7 +76,7 @@
                         <outlet property="passwordText" destination="z55-mh-6D3" id="S5w-xu-oOO"/>
                         <outlet property="questionLabel" destination="CqP-zw-xZn" id="beg-RH-Txz"/>
                         <outlet property="signInLabel" destination="rcx-O3-dnQ" id="Jpe-SJ-FDC"/>
-                        <segue destination="hiV-Cv-WTh" kind="presentation" identifier="toAdminHomepageVC" modalPresentationStyle="fullScreen" id="JJG-O9-3Uz"/>
+                        <segue destination="hiV-Cv-WTh" kind="presentation" identifier="toAdminHomeVC" modalPresentationStyle="fullScreen" id="JJG-O9-3Uz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,7 +88,7 @@
             <objects>
                 <viewController id="DeK-FS-WDt" customClass="SignUpVC" customModule="_Note" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pk6-fe-7JX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoTransparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="lDZ-GB-dOE">
@@ -129,7 +129,7 @@
                                     <action selector="signInClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bf0-6J-ZQb"/>
                                     <action selector="signInClicked:" destination="DeK-FS-WDt" eventType="touchUpInside" id="jPn-nn-Vhf"/>
                                     <action selector="signUpClicked:" destination="DeK-FS-WDt" eventType="touchUpInside" id="4S1-CV-Woe"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="HpK-fr-fUx"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignInVC" modalPresentationStyle="fullScreen" id="HpK-fr-fUx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13M-9G-GeM">
@@ -165,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10h-8R-nFN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11.594202898550726" y="416.51785714285711"/>
+            <point key="canvasLocation" x="12" y="538"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ZWs-W2-m1x">
@@ -194,6 +194,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="OCa-2G-x5Y"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignInVC" modalPresentationStyle="fullScreen" id="3Ce-XV-NZj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ky7-eL-IiR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,35 +209,10 @@
                     <view key="view" contentMode="scaleToFill" id="fg9-z3-ilu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoTransparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="1nj-xn-X6k">
-                                <rect key="frame" x="57" y="80" width="300" height="191"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H0d-xb-Y9T">
-                                <rect key="frame" x="115" y="497" width="184" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1y-0d-eov">
-                                <rect key="frame" x="144" y="591" width="127" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Upload"/>
-                                <connections>
-                                    <action selector="uploadClicked:" destination="OsJ-PQ-Awx" eventType="touchUpInside" id="RuN-Rx-sHi"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6De-kg-anF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="FqC-dL-mNp"/>
-                    <connections>
-                        <outlet property="uploadClicked" destination="A1y-0d-eov" id="V8u-mB-JQy"/>
-                        <outlet property="uploadText" destination="H0d-xb-Y9T" id="WU6-xl-Os5"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G2h-OK-349" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,7 +221,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="79u-iq-Fx4">
             <objects>
-                <tabBarController id="hiV-Cv-WTh" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="hiV-Cv-WTh" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jbk-UT-FUe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -259,6 +237,9 @@
             <point key="canvasLocation" x="1156" y="-221"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3Ce-XV-NZj"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
